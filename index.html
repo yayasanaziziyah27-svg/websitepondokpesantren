@@ -992,7 +992,7 @@ const DEFAULT_DATA = {
   ],
   testimoni: [],
   strukturOrg: [
-    { id: "so1", jabatan: "Kepala Sekolah", nama: "IKHSAN, S.Pd.I.", level: 1 },
+    { id: "so1", jabatan: "Pimpinan Pondok Pesantren", nama: "IKHSAN, S.Pd.I.", level: 1 },
     { id: "so2", jabatan: "Wakasek Kurikulum", nama: "GUSWANDI, S.Pd.", level: 2 },
     { id: "so3", jabatan: "Wakasek Kesiswaan", nama: "Budi Santoso, S.Pd.", level: 2 },
     { id: "so4", jabatan: "Wakasek Sarpras", nama: "Ahmad Yani, S.Pd.", level: 2 },
@@ -1125,7 +1125,7 @@ const DEFAULT_DATA = {
   guru: [{
     id: "g1",
     nama: "Muchim, S.Pd.",
-    jabatan: "Kepala Sekolah"
+    jabatan: "Pimpinan Pondok Pesantren"
   }, {
     id: "g2",
     nama: "Dra. Hj. Siti Aminah, M.Pd.",
@@ -1845,7 +1845,7 @@ const NAVMENU = [{
   label: "Profil Sekolah",
   sub: [{
     id: "sambutan",
-    label: "Sambutan Kepala Sekolah"
+    label: "Sambutan Pimpinan Pondok Pesantren"
   }, {
     id: "visimisi",
     label: "Visi & Misi"
@@ -2070,7 +2070,7 @@ const Sidebar = ({
     className: "sb-card"
   }, /*#__PURE__*/React.createElement("div", {
     className: "sb-card-head"
-  }, "Kepala Sekolah"), /*#__PURE__*/React.createElement("div", {
+  }, "Pimpinan Pondok Pesantren"), /*#__PURE__*/React.createElement("div", {
     className: "sb-kepsek"
   }, foto.sambutan ? /*#__PURE__*/React.createElement("img", {
     src: foto.sambutan,
@@ -2084,7 +2084,7 @@ const Sidebar = ({
     className: "sb-kepsek-nama"
   }, d.kepsek.nama), /*#__PURE__*/React.createElement("div", {
     className: "sb-kepsek-jab"
-  }, "Kepala Sekolah")))), /*#__PURE__*/React.createElement("div", {
+  }, "Pimpinan Pondok Pesantren")))), /*#__PURE__*/React.createElement("div", {
     className: "sb-card"
   }, /*#__PURE__*/React.createElement("div", {
     className: "sb-card-head"
@@ -2386,7 +2386,7 @@ const BerandaPage = ({
     className: "cs-tag"
   }, "Sambutan"), /*#__PURE__*/React.createElement("h2", {
     className: "cs-title"
-  }, "Kepala Sekolah")), /*#__PURE__*/React.createElement("div", {
+  }, "Pimpinan Pondok Pesantren")), /*#__PURE__*/React.createElement("div", {
     className: "samb-mini"
   }, /*#__PURE__*/React.createElement("div", {
     className: "samb-mini-photo"
@@ -2477,8 +2477,8 @@ const SambutanPage = ({
   go,
   foto
 }) => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(PageHdr, {
-  title: "Sambutan Kepala Sekolah",
-  sub: "Pesan dan ucapan dari pimpinan sekolah",
+  title: "Sambutan Pimpinan Pondok Pesantren",
+  sub: "Pesan dan ucapan dari pimpinan pondok pesantren",
   foto: foto.hero
 }), /*#__PURE__*/React.createElement("div", {
   className: "content-wrap"
@@ -2513,7 +2513,7 @@ const SambutanPage = ({
   className: "samb-full-nama"
 }, d.kepsek.nama), /*#__PURE__*/React.createElement("div", {
   className: "samb-full-jab"
-}, "Kepala Sekolah"), /*#__PURE__*/React.createElement("div", {
+}, "Pimpinan Pondok Pesantren"), /*#__PURE__*/React.createElement("div", {
   className: "samb-full-nip"
 }, "NIP. ", d.kepsek.nip))), /*#__PURE__*/React.createElement("div", {
   className: "samb-content"
@@ -2705,7 +2705,7 @@ const StrukturPage = ({
   className: "st-nama"
 }, d.guru[0]?.nama || "Muchim, S.Pd."), /*#__PURE__*/React.createElement("div", {
   className: "st-jab"
-}, "Kepala Sekolah")), /*#__PURE__*/React.createElement("div", {
+}, "Pimpinan Pondok Pesantren")), /*#__PURE__*/React.createElement("div", {
   className: "st-line"
 }), /*#__PURE__*/React.createElement("div", {
   className: "st-mid"
@@ -3505,7 +3505,7 @@ const AdminPanel = ({
     lbl: "Umum"
   }, {
     id: "kepsek",
-    lbl: "Kepsek"
+    lbl: "Pimpinan"
   }, {
     id: "visimisi",
     lbl: "Visi & Misi"
@@ -3581,10 +3581,10 @@ const AdminPanel = ({
     onClick: () => updFoto(key, "")
   }, "\u2715 Hapus"))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
     className: "af-label"
-  }, "Foto Kepala Sekolah"), /*#__PURE__*/React.createElement(PhotoUp, {
+  }, "Foto Pimpinan Pondok Pesantren"), /*#__PURE__*/React.createElement(PhotoUp, {
     src: foto.sambutan,
     onChange: v => updFoto("sambutan", v),
-    label: "Upload Foto Kepsek",
+    label: "Upload Foto Pimpinan",
     w: "120px",
     h: "120px",
     round: true,
@@ -3764,7 +3764,7 @@ tab === "umum" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PU
     })
   })))), tab === "kepsek" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", {
     className: "ah3"
-  }, "Kepala Sekolah"), /*#__PURE__*/React.createElement(F, {
+  }, "Pimpinan Pondok Pesantren"), /*#__PURE__*/React.createElement(F, {
     label: "Nama",
     val: d.kepsek.nama,
     onChange: v => upd("kepsek", {
@@ -3922,7 +3922,7 @@ tab === "umum" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PU
     }))
   }, "+ Tambah Berita")), tab === "struktur" && /*#__PURE__*/React.createElement(React.Fragment, null,
   /*#__PURE__*/React.createElement("h3", { className: "ah3" }, "Struktur Organisasi"),
-  /*#__PURE__*/React.createElement("p", { className: "admin-hint" }, "Kelola susunan pengurus sekolah. Level: 1=Kepala Sekolah, 2=Wakasek, 3=Staf/Guru Bidang."),
+  /*#__PURE__*/React.createElement("p", { className: "admin-hint" }, "Kelola susunan pengurus sekolah. Level: 1=Pimpinan Pondok Pesantren, 2=Wakasek, 3=Staf/Guru Bidang."),
   (d.strukturOrg || []).map((s, i) => /*#__PURE__*/React.createElement("div", { key: s.id, className: "af-card" },
     /*#__PURE__*/React.createElement("div", { style:{display:"flex",gap:"10px",flexWrap:"wrap"} },
       /*#__PURE__*/React.createElement("div", { className: "af-group", style:{flex:"1",minWidth:"120px"} },
@@ -3958,7 +3958,7 @@ tab === "umum" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PU
     }, "✕ Hapus")
   )),
   /*#__PURE__*/React.createElement("div", { style:{background:"var(--bg2)",borderRadius:"8px",padding:"12px",marginBottom:"12px",fontSize:"12px",color:"var(--text-mid)"} },
-    "💡 Level 1 = Kepala Sekolah (tengah atas) • Level 2 = Wakasek (baris kedua) • Level 3 = Staf/Guru (baris bawah)"
+    "💡 Level 1 = Pimpinan Pondok Pesantren (tengah atas) • Level 2 = Wakasek (baris kedua) • Level 3 = Staf/Guru (baris bawah)"
   ),
   /*#__PURE__*/React.createElement("button", {
     className: "af-add",
@@ -4481,7 +4481,7 @@ const Footer = ({
   className: "footer-col"
 }, /*#__PURE__*/React.createElement("div", {
   className: "footer-col-title"
-}, "Profil"), [["sambutan", "Sambutan Kepsek"], ["visimisi", "Visi & Misi"], ["struktur", "Struktur Org."], ["guru", "Guru & Tendik"], ["sejarah", "Sejarah Sekolah"]].map(([id, lbl]) => /*#__PURE__*/React.createElement("button", {
+}, "Profil"), [["sambutan", "Sambutan Pimpinan"], ["visimisi", "Visi & Misi"], ["struktur", "Struktur Org."], ["guru", "Guru & Tendik"], ["sejarah", "Sejarah Sekolah"]].map(([id, lbl]) => /*#__PURE__*/React.createElement("button", {
   key: id,
   className: "footer-link",
   onClick: () => go(id)
