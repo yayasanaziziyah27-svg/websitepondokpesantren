@@ -1822,7 +1822,7 @@ const PhotoUp = ({
 const Marquee = ({
   d
 }) => {
-  const items = [d.sekolah.nama, `${d.sekolah.jumlahSiswa} Siswa Aktif`, `${d.sekolah.jumlahGuru} Guru & Tendik`, `Akreditasi ${d.sekolah.akreditasi}`, `Berdiri Sejak ${d.sekolah.tahunBerdiri}`, "Kurikulum Merdeka", "PPDB 2026/2027 Dibuka"];
+  const items = [d.sekolah.nama, `${d.sekolah.jumlahSiswa} Siswa Aktif`, `${d.sekolah.jumlahGuru} Ustad & Ustazah`, `Akreditasi ${d.sekolah.akreditasi}`, `Berdiri Sejak ${d.sekolah.tahunBerdiri}`, "Kurikulum Merdeka", "PPDB 2026/2027 Dibuka"];
   const all = [...items, ...items];
   return /*#__PURE__*/React.createElement("div", {
     className: "marquee-wrap"
@@ -1854,7 +1854,7 @@ const NAVMENU = [{
     label: "Struktur Organisasi"
   }, {
     id: "guru",
-    label: "Guru & Tendik"
+    label: "Ustad & Ustazah"
   }, {
     id: "sejarah",
     label: "Sejarah Sekolah"
@@ -2130,7 +2130,7 @@ const Sidebar = ({
     className: "sb-card sb-stats-card"
   }, /*#__PURE__*/React.createElement("div", {
     className: "sb-card-head"
-  }, "Data Sekolah"), [["NPSN", d.sekolah.npsn], ["Akreditasi", d.sekolah.akreditasi], ["Siswa Aktif", d.sekolah.jumlahSiswa], ["Guru & Tendik", d.sekolah.jumlahGuru], ["Rombongan Belajar", d.sekolah.jumlahRombel]].map(([l, v]) => /*#__PURE__*/React.createElement("div", {
+  }, "Data Sekolah"), [["NPSN", d.sekolah.npsn], ["Akreditasi", d.sekolah.akreditasi], ["Siswa Aktif", d.sekolah.jumlahSiswa], ["Ustad & Ustazah", d.sekolah.jumlahGuru], ["Rombongan Belajar", d.sekolah.jumlahRombel]].map(([l, v]) => /*#__PURE__*/React.createElement("div", {
     key: l,
     className: "sb-stat-row"
   }, /*#__PURE__*/React.createElement("span", {
@@ -2234,7 +2234,7 @@ const StrukturOrgPage = ({ d, go }) => {
 const StatsSection = ({ d }) => {
   const stats = [
     { icon: "🎓", num: d.statistik?.siswa || "800+", label: "Siswa Aktif" },
-    { icon: "👩‍🏫", num: d.statistik?.guru || "55+", label: "Guru & Staf" },
+    { icon: "👩‍🏫", num: d.statistik?.guru || "55+", label: "Ustad & Ustazah" },
     { icon: "🏫", num: d.statistik?.kelas || "27", label: "Rombel Kelas" },
     { icon: "🏆", num: d.statistik?.prestasi || "500+", label: "Prestasi" },
   ];
@@ -2574,8 +2574,8 @@ const GuruPage = ({
   go,
   foto
 }) => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(PageHdr, {
-  title: "Guru & Tenaga Kependidikan",
-  sub: "Tenaga profesional pendidik Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
+  title: "Ustad & Ustazah",
+  sub: "Para ustad dan ustazah pengajar Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
   foto: foto.hero
 }), /*#__PURE__*/React.createElement("div", {
   className: "content-wrap"
@@ -3523,7 +3523,7 @@ const AdminPanel = ({
     lbl: "Agenda"
   }, {
     id: "guru",
-    lbl: "Guru"
+    lbl: "Ustad & Ustazah"
   }, {
     id: "ppdb",
     lbl: "PPDB"
@@ -3594,7 +3594,7 @@ const AdminPanel = ({
     onClick: () => updFoto("sambutan", "")
   }, "\u2715 Hapus"))), /*#__PURE__*/React.createElement("h4", {
     className: "ah4 mt-24"
-  }, "Foto Guru"), /*#__PURE__*/React.createElement("div", {
+  }, "Foto Ustad & Ustazah"), /*#__PURE__*/React.createElement("div", {
     className: "foto-guru-grid"
   }, d.guru.map(g => /*#__PURE__*/React.createElement("div", {
     key: g.id,
@@ -3655,7 +3655,7 @@ const AdminPanel = ({
   /*#__PURE__*/React.createElement("h4", { className: "ah4", style:{marginTop:"20px"} }, "📊 Statistik Sekolah"),
   ["siswa","guru","kelas","prestasi"].map(k => /*#__PURE__*/React.createElement("div", { key: k, className: "af-row" },
     /*#__PURE__*/React.createElement("label", { className: "af-label" },
-      k === "siswa" ? "Jumlah Siswa" : k === "guru" ? "Jumlah Guru & Staf" : k === "kelas" ? "Jumlah Kelas/Rombel" : "Total Prestasi"
+      k === "siswa" ? "Jumlah Siswa" : k === "guru" ? "Jumlah Ustad & Ustazah" : k === "kelas" ? "Jumlah Kelas/Rombel" : "Total Prestasi"
     ),
     React.createElement(LocalInput, {
       className: "af-input",
@@ -3755,7 +3755,7 @@ tab === "umum" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PU
     className: "ah3"
   }, "Informasi Umum Sekolah"), /*#__PURE__*/React.createElement("div", {
     className: "af-grid"
-  }, [["nama", "Nama Sekolah"], ["tagline", "Tagline / Motto"], ["alamat", "Alamat"], ["telp", "Telepon"], ["email", "Email"], ["npsn", "NPSN"], ["akreditasi", "Akreditasi"], ["tahunBerdiri", "Tahun Berdiri"], ["jumlahSiswa", "Jumlah Siswa"], ["jumlahGuru", "Jumlah Guru"], ["jumlahRombel", "Rombongan Belajar"], ["facebookUrl", "Facebook URL"], ["instagramUrl", "Instagram URL"], ["youtubeUrl", "YouTube URL"], ["announcement", "Teks Pengumuman Berjalan"]].map(([k, l]) => /*#__PURE__*/React.createElement(F, {
+  }, [["nama", "Nama Sekolah"], ["tagline", "Tagline / Motto"], ["alamat", "Alamat"], ["telp", "Telepon"], ["email", "Email"], ["npsn", "NPSN"], ["akreditasi", "Akreditasi"], ["tahunBerdiri", "Tahun Berdiri"], ["jumlahSiswa", "Jumlah Siswa"], ["jumlahGuru", "Jumlah Ustad & Ustazah"], ["jumlahRombel", "Rombongan Belajar"], ["facebookUrl", "Facebook URL"], ["instagramUrl", "Instagram URL"], ["youtubeUrl", "YouTube URL"], ["announcement", "Teks Pengumuman Berjalan"]].map(([k, l]) => /*#__PURE__*/React.createElement(F, {
     key: k,
     label: l,
     val: d.sekolah[k],
@@ -4257,7 +4257,7 @@ tab === "unduhan" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#_
     }))
   }, "+ Tambah Agenda")), tab === "guru" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", {
     className: "ah3"
-  }, "Guru & Tendik"), d.guru.map((g, i) => /*#__PURE__*/React.createElement("div", {
+  }, "Ustad & Ustazah"), d.guru.map((g, i) => /*#__PURE__*/React.createElement("div", {
     key: g.id,
     className: "af-arr-row"
   }, /*#__PURE__*/React.createElement("input", {
@@ -4306,7 +4306,7 @@ tab === "unduhan" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#_
         jabatan: ""
       }]
     }))
-  }, "+ Tambah Guru")), tab === "ppdb" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", {
+  }, "+ Tambah Ustad/Ustazah")), tab === "ppdb" && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", {
     className: "ah3"
   }, "PPDB"), /*#__PURE__*/React.createElement("div", {
     className: "af-grid"
@@ -4481,7 +4481,7 @@ const Footer = ({
   className: "footer-col"
 }, /*#__PURE__*/React.createElement("div", {
   className: "footer-col-title"
-}, "Profil"), [["sambutan", "Sambutan Pimpinan"], ["visimisi", "Visi & Misi"], ["struktur", "Struktur Org."], ["guru", "Guru & Tendik"], ["sejarah", "Sejarah Sekolah"]].map(([id, lbl]) => /*#__PURE__*/React.createElement("button", {
+}, "Profil"), [["sambutan", "Sambutan Pimpinan"], ["visimisi", "Visi & Misi"], ["struktur", "Struktur Org."], ["guru", "Ustad & Ustazah"], ["sejarah", "Sejarah Sekolah"]].map(([id, lbl]) => /*#__PURE__*/React.createElement("button", {
   key: id,
   className: "footer-link",
   onClick: () => go(id)
