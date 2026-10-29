@@ -8,10 +8,10 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png">
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>pondoko</title>
-<meta name="description" content="Website resmi SMP Negeri 2 Muara Bungo — informasi sekolah, profil, PPDB, berita, prestasi, dan kegiatan siswa."/>
-<meta property="og:title" content="SMP Negeri 2 Muara Bungo"/>
-<meta property="og:description" content="Website resmi SMP Negeri 2 Muara Bungo — informasi sekolah, profil, PPDB, berita, prestasi, dan kegiatan siswa."/>
+<title>Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah</title>
+<meta name="description" content="Website resmi Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah — informasi sekolah, profil, PPDB, berita, prestasi, dan kegiatan siswa."/>
+<meta property="og:title" content="Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah"/>
+<meta property="og:description" content="Website resmi Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah — informasi sekolah, profil, PPDB, berita, prestasi, dan kegiatan siswa."/>
 <meta property="og:type" content="website"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -21,7 +21,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script>
   if (!window.supabase) {
-   
+    document.write('<script src="https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.min.js"><\/script>');
   }
 </script>
 <style>
@@ -716,7 +716,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.8);}
     <div class="loader-ring"></div>
     <div class="loader-inner-ring"></div>
   </div>
-  <div class="loader-text">SMP Negeri 2 Muara Bungo</div>
+  <div class="loader-text">Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah</div>
   <div class="loader-sub">Memuat halaman...</div>
 </div>
 <div id="root"></div>
@@ -728,8 +728,8 @@ const {
 } = React;
 
 /* ──── STORAGE ──── */
-const SUPABASE_URL = "https://mqbkvfrryfkxnbfgixyg.supabase.co";
-const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1xYmt2ZnJyeWZreG5iZmdpeHlnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzMTI2OTgsImV4cCI6MjA5Njg4ODY5OH0.Hx8RDPSgX4x_BC8ZeYS7_gAu3tGtVnmAXGA8KOiz9yo";
+const SUPABASE_URL = "https://ycsrgaxexqojapnxgtbj.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inljc3JnYXhleHFvamFwbnhndGJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMyNzYwMjMsImV4cCI6MjEwODg1MjAyM30.oSBucasahVmfbky_PDroEbIfuPwNaMKHAZen1LyLgCk";
 const sb = window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY, {
   auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false }
 }) : null;
@@ -956,8 +956,8 @@ const genId = () => Date.now().toString(36) + Math.random().toString(36).slice(2
 /* ──── DEFAULT DATA ──── */
 const DEFAULT_DATA = {
   sekolah: {
-    nama: "SMP Negeri 2 Muara Bungo",
-    singkat: "SMPN 2 Bungo",
+    nama: "Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
+    singkat: "PP Tahfidzul Qur'an Aziziyah",
     tagline: "Cerdas · Berakhlak · Berprestasi",
     alamat: "Jl. Taman Siswa, Kel. Manggis, Kec. Bathin III, Kab. Bungo, Jambi 37211",
     npsn: "10504697",
@@ -1006,21 +1006,21 @@ const DEFAULT_DATA = {
   kepsek: {
     nama: "IKHSAN, S.Pd.I.",
     nip: "-",
-    sambutan: `Assalamu'alaikum Warahmatullahi Wabarakatuh,\n\nSelamat datang di website resmi SMP Negeri 2 Muara Bungo. Puji syukur kehadirat Allah Subhanahu Wa Ta'ala yang telah memberikan karunia sehingga website ini hadir sebagai sarana informasi dan komunikasi bagi seluruh warga sekolah dan masyarakat.\n\nSebagai lembaga pendidikan yang telah berdiri sejak tahun 1980, SMP Negeri 2 Muara Bungo berkomitmen untuk terus berinovasi dalam menghadirkan layanan pendidikan yang berkualitas, berkarakter, dan berwawasan lingkungan.\n\nMelalui website ini, Anda dapat mengakses berbagai informasi terkait profil sekolah, program akademik, kegiatan kesiswaan, fasilitas, dan informasi penting lainnya. Semoga bermanfaat bagi seluruh pemangku kepentingan.\n\nWassalamu'alaikum Warahmatullahi Wabarakatuh.`
+    sambutan: `Assalamu'alaikum Warahmatullahi Wabarakatuh,\n\nSelamat datang di website resmi Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah. Puji syukur kehadirat Allah Subhanahu Wa Ta'ala yang telah memberikan karunia sehingga website ini hadir sebagai sarana informasi dan komunikasi bagi seluruh warga sekolah dan masyarakat.\n\nSebagai lembaga pendidikan yang telah berdiri sejak tahun 1980, Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah berkomitmen untuk terus berinovasi dalam menghadirkan layanan pendidikan yang berkualitas, berkarakter, dan berwawasan lingkungan.\n\nMelalui website ini, Anda dapat mengakses berbagai informasi terkait profil sekolah, program akademik, kegiatan kesiswaan, fasilitas, dan informasi penting lainnya. Semoga bermanfaat bagi seluruh pemangku kepentingan.\n\nWassalamu'alaikum Warahmatullahi Wabarakatuh.`
   },
   visi: "Terwujudnya peserta didik yang beriman, cerdas, terampil, berakhlak mulia, dan berwawasan lingkungan berdasarkan Profil Pelajar Pancasila.",
   misi: ["Menanamkan keimanan dan ketakwaan kepada Tuhan Yang Maha Esa.", "Meningkatkan mutu pembelajaran yang aktif, inovatif, kreatif, efektif, dan menyenangkan (PAIKEM).", "Menerapkan Kurikulum Merdeka yang berpihak pada siswa dan pembelajaran berdiferensiasi.", "Mengembangkan bakat, minat, dan potensi siswa secara optimal.", "Mewujudkan lingkungan sekolah yang aman, bersih, sehat, indah, dan berwawasan lingkungan.", "Menjalin kerjasama yang harmonis antara sekolah, orang tua, masyarakat, dan pemangku kepentingan."],
   berita: [{
     id: "b1",
-    judul: "Website resmi SMPN NEGERI 2 BUNGO",
+    judul: "Website resmi Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
     kategori: "Pengumuman",
-    isi: "Website resmi  SMP Negeri 2 Muara Bungo.",
+    isi: "Website resmi  Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah.",
     tanggal: "2026-02-10"
   }, {
     id: "b2",
     judul: "Juara 1 Olimpiade Matematika Kabupaten",
     kategori: "Prestasi",
-    isi: "Ananda Rina Putri kelas 9A meraih juara 1 Olimpiade Matematika tingkat Kabupaten Bungo tahun 2025. Sebuah prestasi membanggakan bagi seluruh keluarga besar SMPN 2 Bungo.",
+    isi: "Ananda Rina Putri kelas 9A meraih juara 1 Olimpiade Matematika tingkat Kabupaten Bungo tahun 2025. Sebuah prestasi membanggakan bagi seluruh keluarga besar PP Tahfidzul Qur'an Aziziyah.",
     tanggal: "2026-02-05"
   }, {
     id: "b3",
@@ -1032,19 +1032,19 @@ const DEFAULT_DATA = {
     id: "b4",
     judul: "Kegiatan Tadarus Al-Qur'an Rutin",
     kategori: "Kegiatan",
-    isi: "SMP Negeri 2 Muara Bungo mengadakan kegiatan Tadarus Al-Qur'an bersama setiap pagi sebelum jam pelajaran dimulai.",
+    isi: "Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah mengadakan kegiatan Tadarus Al-Qur'an bersama setiap pagi sebelum jam pelajaran dimulai.",
     tanggal: "2026-01-15"
   }, {
     id: "b5",
     judul: "Proyek P5: Rekayasa Berteknologi",
     kategori: "Akademik",
-    isi: "Siswa-siswi SMPN 2 Bungo menggelar pameran hasil Proyek Penguatan Profil Pelajar Pancasila dengan tema Rekayasa Berteknologi.",
+    isi: "Siswa-siswi PP Tahfidzul Qur'an Aziziyah menggelar pameran hasil Proyek Penguatan Profil Pelajar Pancasila dengan tema Rekayasa Berteknologi.",
     tanggal: "2025-12-20"
   }, {
     id: "b6",
     judul: "Program Adiwiyata Sekolah Hijau",
     kategori: "Lingkungan",
-    isi: "SMPN 2 Bungo terus melaksanakan program Adiwiyata sebagai bagian dari upaya menciptakan sekolah yang peduli dan berbudaya lingkungan.",
+    isi: "PP Tahfidzul Qur'an Aziziyah terus melaksanakan program Adiwiyata sebagai bagian dari upaya menciptakan sekolah yang peduli dan berbudaya lingkungan.",
     tanggal: "2025-12-10"
   }],
   pengumuman: [{
@@ -2215,7 +2215,7 @@ const StrukturOrgPage = ({ d, go }) => {
       React.createElement("div", { className: "section-hdr", style:{marginBottom:"28px"} },
         React.createElement("span", { className: "section-hdr-tag" }, "Organisasi"),
         React.createElement("h2", { className: "section-hdr-title" }, "Struktur Organisasi"),
-        React.createElement("p", { className: "section-hdr-sub" }, "Susunan pengurus dan pengelola SMP Negeri 2 Muara Bungo")
+        React.createElement("p", { className: "section-hdr-sub" }, "Susunan pengurus dan pengelola Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah")
       ),
       lv1.length > 0 && React.createElement(React.Fragment, null,
         React.createElement("div", { className: "org-grid-1" }, lv1.map(x => React.createElement(Card, { key: x.id, item: x }))),
@@ -2415,7 +2415,7 @@ const BerandaPage = ({
     className: "samb-mini-nama"
   }, d.kepsek.nama), /*#__PURE__*/React.createElement("div", {
     className: "samb-mini-jab"
-  }, "Kepala SMP Negeri 2 Muara Bungo"), /*#__PURE__*/React.createElement("p", {
+  }, "Kepala Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah"), /*#__PURE__*/React.createElement("p", {
     className: "samb-mini-text"
   }, d.kepsek.sambutan.split("\n\n")[1] || d.kepsek.sambutan.split("\n")[0]), /*#__PURE__*/React.createElement("button", {
     className: "link-btn",
@@ -2532,7 +2532,7 @@ const VisiMisiPage = ({
   foto
 }) => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(PageHdr, {
   title: "Visi & Misi",
-  sub: "Arah dan tujuan pendidikan SMPN 2 Muara Bungo",
+  sub: "Arah dan tujuan pendidikan Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
   foto: foto.hero
 }), /*#__PURE__*/React.createElement("div", {
   className: "content-wrap"
@@ -2575,7 +2575,7 @@ const GuruPage = ({
   foto
 }) => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(PageHdr, {
   title: "Guru & Tenaga Kependidikan",
-  sub: "Tenaga profesional pendidik SMPN 2 Muara Bungo",
+  sub: "Tenaga profesional pendidik Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
   foto: foto.hero
 }), /*#__PURE__*/React.createElement("div", {
   className: "content-wrap"
@@ -2616,7 +2616,7 @@ const SejarahPage = ({
   foto
 }) => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(PageHdr, {
   title: "Sejarah Sekolah",
-  sub: "Perjalanan panjang SMPN 2 Muara Bungo sejak 1980",
+  sub: "Perjalanan panjang Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah sejak 1980",
   foto: foto.hero
 }), /*#__PURE__*/React.createElement("div", {
   className: "content-wrap"
@@ -2631,7 +2631,7 @@ const SejarahPage = ({
     color: "var(--text-mid)",
     marginBottom: "32px"
   }
-}, "SMP Negeri 2 Muara Bungo didirikan pada tanggal 7 November 1980 dan terletak di Jl. Taman Siswa, Kelurahan Manggis, Kec. Bathin III, Kabupaten Bungo, Provinsi Jambi, dengan luas tanah sekitar 14.625 m\xB2."), foto.sekolahDepan && /*#__PURE__*/React.createElement("div", {
+}, "Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah didirikan pada tanggal 7 November 1980 dan terletak di Jl. Taman Siswa, Kelurahan Manggis, Kec. Bathin III, Kabupaten Bungo, Provinsi Jambi, dengan luas tanah sekitar 14.625 m\xB2."), foto.sekolahDepan && /*#__PURE__*/React.createElement("div", {
   className: "sejarah-foto-wrap"
 }, /*#__PURE__*/React.createElement("img", {
   src: foto.sekolahDepan,
@@ -2689,7 +2689,7 @@ const StrukturPage = ({
   foto
 }) => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(PageHdr, {
   title: "Struktur Organisasi",
-  sub: "Susunan organisasi SMP Negeri 2 Muara Bungo",
+  sub: "Susunan organisasi Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
   foto: foto.hero
 }), /*#__PURE__*/React.createElement("div", {
   className: "content-wrap"
@@ -2738,7 +2738,7 @@ const KurikulumPage = ({
   foto
 }) => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(PageHdr, {
   title: "Kurikulum Merdeka",
-  sub: "Implementasi Kurikulum Merdeka di SMPN 2 Muara Bungo",
+  sub: "Implementasi Kurikulum Merdeka di Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
   foto: foto.hero
 }), /*#__PURE__*/React.createElement("div", {
   className: "content-wrap"
@@ -2753,7 +2753,7 @@ const KurikulumPage = ({
     color: "var(--text-mid)",
     marginBottom: "28px"
   }
-}, "SMP Negeri 2 Muara Bungo menerapkan Kurikulum Merdeka sesuai arahan Kemendikbudristek RI, memberikan keleluasaan bagi guru untuk mengembangkan pembelajaran yang sesuai kebutuhan siswa."), /*#__PURE__*/React.createElement("div", {
+}, "Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah menerapkan Kurikulum Merdeka sesuai arahan Kemendikbudristek RI, memberikan keleluasaan bagi guru untuk mengembangkan pembelajaran yang sesuai kebutuhan siswa."), /*#__PURE__*/React.createElement("div", {
   className: "kuri-grid"
 }, ["Pembelajaran Berdiferensiasi", "Project Based Learning (P5)", "Asesmen Formatif & Sumatif", "Ekstrakurikuler Wajib Pramuka", "Pembiasaan Literasi 15 Menit", "Integrasi Teknologi Pembelajaran"].map((k, i) => /*#__PURE__*/React.createElement("div", {
   key: i,
@@ -2876,7 +2876,7 @@ const BeritaPage = ({
   foto
 }) => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(PageHdr, {
   title: "Kegiatan & Berita",
-  sub: "Informasi dan kegiatan terbaru SMPN 2 Muara Bungo",
+  sub: "Informasi dan kegiatan terbaru Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
   foto: foto.hero
 }), /*#__PURE__*/React.createElement("div", {
   className: "content-wrap"
@@ -3064,7 +3064,7 @@ const AgendaPage = ({
   foto
 }) => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(PageHdr, {
   title: "Agenda Sekolah",
-  sub: "Kegiatan dan jadwal penting SMP Negeri 2 Muara Bungo",
+  sub: "Kegiatan dan jadwal penting Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
   foto: foto.hero
 }), /*#__PURE__*/React.createElement("div", {
   className: "content-wrap"
@@ -3106,7 +3106,7 @@ const PrestasiPage = ({
   foto
 }) => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(PageHdr, {
   title: "Prestasi Siswa",
-  sub: "Raihan juara dan kebanggaan SMPN 2 Muara Bungo",
+  sub: "Raihan juara dan kebanggaan Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
   foto: foto.hero
 }), /*#__PURE__*/React.createElement("div", {
   className: "content-wrap"
@@ -3142,7 +3142,7 @@ const PpdbPage = ({
   foto
 }) => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(PageHdr, {
   title: `PPDB ${d.ppdb.tahun}`,
-  sub: "Penerimaan Peserta Didik Baru SMPN 2 Muara Bungo",
+  sub: "Penerimaan Peserta Didik Baru Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
   foto: foto.hero
 }), /*#__PURE__*/React.createElement("div", {
   className: "content-wrap"
@@ -3260,7 +3260,7 @@ const GaleriPage = ({
   foto
 }) => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(PageHdr, {
   title: "Galeri Foto",
-  sub: "Dokumentasi kegiatan SMPN 2 Muara Bungo",
+  sub: "Dokumentasi kegiatan Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
   foto: foto.hero
 }), /*#__PURE__*/React.createElement("div", {
   className: "content-wrap"
@@ -3299,7 +3299,7 @@ const KontakPage = ({
   foto
 }) => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(PageHdr, {
   title: "Hubungi Kami",
-  sub: "Informasi kontak dan lokasi SMPN 2 Muara Bungo",
+  sub: "Informasi kontak dan lokasi Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
   foto: foto.hero
 }), /*#__PURE__*/React.createElement("div", {
   className: "content-wrap"
@@ -3335,7 +3335,7 @@ const KontakPage = ({
       /*#__PURE__*/React.createElement("span", { className: "cs-tag" }, "Temukan Kami")
     ),
     /*#__PURE__*/React.createElement("iframe", {
-      title: "Lokasi SMP Negeri 2 Muara Bungo",
+      title: "Lokasi Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah",
       src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3990.123!2d102.12791388123847!3d-1.4532409416004386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zLTEuNDUzMjQwOSwgMTAyLjEyNzkxNA!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid",
       className: "map-frame",
       allowFullScreen: true,
@@ -3548,7 +3548,7 @@ const AdminPanel = ({
     className: "admin-title"
   }, "Admin Panel"), /*#__PURE__*/React.createElement("p", {
     className: "admin-sub"
-  }, "Kelola konten website SMPN 2 Muara Bungo")), /*#__PURE__*/React.createElement("button", {
+  }, "Kelola konten website Pondok Pesantren Tahfidzul Qur'an Yayasan Aziziyah")), /*#__PURE__*/React.createElement("button", {
     className: "admin-logout",
     onClick: onLogout
   }, /*#__PURE__*/React.createElement(Icon.LogOut, null), " Keluar")), /*#__PURE__*/React.createElement("div", {
